@@ -1,0 +1,47 @@
+.latest-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.latest-card {
+  max-width: 300px;
+  margin: 30px;
+  background-color: var(--white);
+  text-align: center;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: normal;
+  color: var(--green);
+  margin: 10px 0 10px 0;
+}
+
+.read-button {
+  border: none;
+  background-color: var(--green);
+  color: var(--white);
+  padding: 10px;
+  margin: 20px 0 20px 0;
+  cursor: pointer;
+  font-size: 18px;
+  width: 50%;
+}
+
+.blog-img {
+  width: 100%;
+}
+
+@media only screen and (min-width: 1024px) {
+  .latest-container {
+    flex-direction: row;
+  }
+
+  .latest-card {
+    max-width: 300px;
+  }
+}

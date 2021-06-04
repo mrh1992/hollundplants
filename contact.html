@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/fa2c4d853e.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hollund Plant - From seed to plant</title>
+    <meta name="description" content="For any enquiries, please write to me!" />
+    <link href="CSS/styles.css" rel="stylesheet" />
+    <link href="CSS/contact.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div class="dropdown-menu">
+        <a href="index.html"
+          ><img
+            src="Images/plants-logo.png"
+            alt="Brandlogo for Hollund Plants"
+            class="logo"
+        /></a>
+        <label for="hamburger-menu">
+          <i class="fas fa-bars hamburger-bars"></i>
+        </label>
+        <input type="checkbox" id="hamburger-menu" />
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <h1>Contact Us</h1>
+      <section class="contact-container">
+        <div class="contact-box">
+          <div class="left-container">
+            <form id="contactForm">
+              <div>
+                <label class="input-name">
+                  Name (Minimum 5 characters)
+                  <input name="fullName" id="fullName" />
+                </label>
+                <div class="form-error" id="fullNameError">
+                  Your name must be at least 5 characters
+                </div>
+              </div>
+
+              <div>
+                <label class="input-email">
+                  Email (Required)
+                  <input name="email" id="email" />
+                </label>
+                <div class="form-error" id="emailError">
+                  Please enter a valid email address
+                </div>
+              </div>
+
+              <div>
+                <label class="input-subject">
+                  Subject (Minimum 15 characters)
+                  <input name="subject" id="subject" />
+                </label>
+                <div class="form-error" id="subjectError">
+                  The subject must be at least 15 characters
+                </div>
+              </div>
+
+              <div>
+                <label class="input-message">
+                  Message (Minimum 25 characters)
+                  <input name="message" id="message" />
+                </label>
+                <div class="form-error" id="messageError">
+                  The message must be at least 25 characters
+                </div>
+              </div>
+
+              <button class="submit-btn">Submit</button>
+            </form>
+          </div>
+
+          <div class="right-container">
+            <p>E-Mail:</p>
+            <p>contact@hollundplants.com</p>
+            <p class="address-p">Address:</p>
+            <p>Hollund Street 1</p>
+            <p>5050 Bergen</p>
+            <p>Norway</p>
+          </div>
+        </div>
+      </section>
+      <div class="back-div">
+        <a href="index.html"><button class="back-btn">Back</button></a>
+      </div>
+    </main>
+    <div class="footer-container"></div>
+    <footer>
+      <section class="footer-sections">
+        <div class="footer-column">
+          <h4>Contact</h4>
+          <h5>contact@hollundplants.com</h5>
+          <h5>Hollund Street 1</h5>
+          <h5>5050 Bergen</h5>
+        </div>
+        <div class="footer-column">
+          <h4>Follow</h4>
+          <h5>Pinterest</h5>
+          <h5>Instagram</h5>
+          <h5>Facebook</h5>
+        </div>
+      </section>
+      <h5 class="copywrite">Hollund Plants &copy 2021</h5>
+    </footer>
+    <script src="JS/contact.js"></script>
+  </body>
+</html>

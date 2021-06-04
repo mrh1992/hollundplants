@@ -1,0 +1,37 @@
+.blogdetail-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.content-container {
+  max-width: 700px;
+}
+
+.blog-content {
+  padding: 20px;
+  margin-top: 40px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  max-width: 700px;
+  margin-top: 10px;
+}
+
+.author-info {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+.posted-date {
+  margin-right: 20px;
+}
+
+p {
+  padding-top: 10px;
+}
