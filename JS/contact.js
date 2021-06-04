@@ -7,6 +7,7 @@ const subject = document.querySelector("#subject");
 const subjectError = document.querySelector("#subjectError");
 const message = document.querySelector("#message");
 const messageError = document.querySelector("#messageError");
+const messageSent = document.querySelector(".message-sent");
 
 function validateContactForm(event) {
     event.preventDefault();
@@ -33,6 +34,12 @@ function validateContactForm(event) {
         messageError.style.display = "none";
     } else {
         messageError.style.display = "block";
+    }
+
+    if (validateLength(fullName.value, 4) && validateEmail(email.value) && validateLength(subject.value, 14) && validateLength(message.value, 24)) {
+        messageSent.style.display = "block";
+    } else {
+        messageSent.style.display = "none";
     }
 }
 
