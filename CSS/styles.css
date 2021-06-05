@@ -108,6 +108,36 @@ nav ul li a:hover {
   max-width: 100%;
 }
 
+/* Breadcrumbs */
+ul.breadcrumbs {
+  margin: 20px;
+}
+
+ul.breadcrumbs li {
+  display: inline;
+  font-size: 18px;
+}
+
+ul.breadcrumbs li + li:before {
+  padding: 5px;
+  color: var(--green);
+  content: "/";
+}
+
+ul.breadcrumbs li a {
+  color: var(--green);
+  text-decoration: none;
+}
+
+ul.breadcrumbs li a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumbs li:last-child {
+  font-weight: bold;
+  color: var(--black);
+}
+
 /*Loading API*/
 .loading {
   border: 12px solid var(--white);

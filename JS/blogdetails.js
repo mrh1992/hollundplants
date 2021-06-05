@@ -1,4 +1,5 @@
 const detailContainer = document.querySelector(".blogdetail-container");
+const breadcrumb = document.querySelector(".breadcrumbs");
 
 const queryString = document.location.search;
 
@@ -13,7 +14,6 @@ async function fetchBlogPost() {
     try {
         const response = await fetch(url);
         const details = await response.json();
-
 
         const convertDate = new Date (details.date).toLocaleString("en-GB", {day: "numeric", month: "long", year: "numeric",});
 
@@ -31,6 +31,12 @@ async function fetchBlogPost() {
                                             </div>
                                         </div>
                                     </div>`;
+
+        breadcrumb.innerHTML = `<li><a href="index.html">Home</a></li>
+                                <li><a href="blog.html">Blog</a></li>
+                                <li>${details.title.rendered}</li>`;
+
+            
         //Modal Image
 
         const modal = document.querySelector(".modal-container");

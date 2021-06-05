@@ -1,6 +1,7 @@
 const url = "https://www.hollundflowerpower.one/wp-json/wp/v2/posts?_embed&per_page=12";
 const postsContainer = document.querySelector(".posts-container");
 const loadMore = document.querySelector(".load-more");
+const breadcrumb = document.querySelector(".breadcrumbs");
 
 async function getPosts() {
     try {
@@ -8,14 +9,17 @@ async function getPosts() {
 
         const results = await response.json();
 
-        console.log(results);
-
+        breadcrumb.innerHTML = "";
         postsContainer.innerHTML = "";
+        
 
         for (let i = 0; i < results.length; i++) {
             console.log(results[i].name);
 
             const convertDate = new Date (results[i].date).toLocaleString("en-GB", {day: "numeric", month: "long", year: "numeric",});
+
+            breadcrumb.innerHTML = `<li><a href="index.html">Home</a></li>
+                                    <li>Blog</li>`;
 
             postsContainer.innerHTML += `<div class="post-card">
                                             <a href="blogdetails.html?id=${results[i].id}">
