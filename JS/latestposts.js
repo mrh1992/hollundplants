@@ -8,7 +8,6 @@ async function getLatestPosts() {
         const results = await response.json();
 
         for(let i = 0; i < results.length; i++) {
-            console.log(results[i].name);
 
             if (i === 4) {
                 break;
