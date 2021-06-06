@@ -103,9 +103,21 @@ nav ul li a:hover {
   max-height: 250px;
   padding: 15px 0;
 }
-
+/* Main Image on frontpage */
 .hero-img {
   max-width: 100%;
+}
+
+.image-container {
+  position: relative;
+}
+
+h2 {
+  font-family: Shadows Into Light, Helvetica;
+  position: absolute;
+  bottom: 40%;
+  right: 5%;
+  font-weight: lighter;
 }
 
 /* Breadcrumbs */
@@ -204,6 +216,12 @@ h5 {
   text-align: center;
 }
 
+@media only screen and (min-width: 600px) {
+  h2 {
+    font-size: 40px;
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   h1 {
     font-size: 48px;
@@ -233,6 +251,10 @@ h5 {
   nav ul li a {
     font-size: 26px;
     padding-bottom: 10px;
+  }
+
+  h2 {
+    font-size: 90px;
   }
 
   .footer-sections {
